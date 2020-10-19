@@ -5,7 +5,7 @@ Sixth project with Alchitry Au FPGA board
 Inspired by Alchitry Verilog tutorial: https://alchitry.com/blogs/tutorials/creating-a-vivado-project-for-the-au
 
 Implement an egg timer:
- - UP/DOWN buttons - increment / decrement time to count down
+ - UP/DOWN buttons - increment / decrement time to count down + deactivate alarm
  - CENTER button - start / stop
 
 # Modules
