@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="verilog-5" board="Alchitry Au" language="Verilog" version="3">
+  <files>
+    <src>segment_display.v</src>
+    <src>button_debounce.v</src>
+    <src>multi_segment_display.v</src>
+    <src>binary_to_decimal.v</src>
+    <src>clock_divider.v</src>
+    <src top="true">au_top.v</src>
+    <constraint lib="true">au.xdc</constraint>
+    <constraint>alchitry_au_and_io.acf</constraint>
+  </files>
+</project>
