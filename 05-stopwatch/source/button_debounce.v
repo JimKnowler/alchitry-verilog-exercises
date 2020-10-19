@@ -13,14 +13,14 @@ module button_debounce (
   // synchronize the switch input to the clock
   reg sync_0, sync_1;
   
-  always @(posedge CLK)
+  always @(posedge clk)
   begin
-    sync_0 = switch_input;
+    sync_0 <= switch_input;
   end
   
-  always @(posedge CLK)
+  always @(posedge clk)
   begin
-    sync_1 = sync_0;
+    sync_1 <= sync_0;
   end
   
   // debounce the synchronized switch input
