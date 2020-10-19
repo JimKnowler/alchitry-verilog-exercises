@@ -31,16 +31,21 @@ module au_top(
     reg [15:0] counter;
     
     // manage state with button presses                
-    reg state;
+    reg [1:0] state;
     
-    localparam STATE_PAUSED = 1'b0;
-    localparam STATE_RUNNING = 1'b1;
+    localparam STATE_PAUSED = 2'b00;
+    localparam STATE_RUNNING = 2'b01;
+    localparam STATE_RESET = 2'b10;
                 
     always @(posedge clk) begin
       if (button_reset_down) begin
-        state <= STATE_PAUSED;
+        state[1:0] <= STATE_RESET;
       end else if (button_play_down) begin
-        state <= ~state;
+        if (state[1:0] == STATE_RUNNING) begin
+          state[1:0] <= STATE_PAUSED;
+        end else begin
+          state[1:0] <= STATE_RUNNING;
+        end
       end
     end
     
@@ -49,15 +54,17 @@ module au_top(
     clock_divider #(.DIV(20)) clk_divider_counter(.clock_in(clk), .clock_out(clk_counter));
        
     always @(posedge clk_counter) begin
-      if (state == STATE_RUNNING) begin
-        if (counter == 9999) begin
-          counter <= 0;
-        end else begin
-          counter <= counter + 1;
+      case (state[1:0])
+        STATE_RUNNING: begin
+          if (counter == 9999) begin
+            counter <= 0;
+          end else begin
+            counter <= counter + 1;
+          end
         end
-      end else begin
-        counter <= 0;
-      end
+        STATE_RESET: counter <= 0;
+        default: counter <= counter;
+      endcase
     end
         
     // convert from raw counter to 4-bit decimal digits
