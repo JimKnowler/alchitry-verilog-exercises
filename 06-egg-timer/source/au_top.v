@@ -45,6 +45,7 @@ module au_top(
     localparam STATE_PAUSED = 1'b0;
     localparam STATE_RUNNING = 1'b1;
     
+    // alarm should be active when counter has counted down to 0
     reg alarm;
     
     // decrement counter while state is RUNNING
@@ -66,7 +67,10 @@ module au_top(
            counter <= 0;
       end else if (button_play_down) begin
         alarm <= 0;
-        state <= ~state;
+        
+        if ((state == STATE_RUNNING) || (counter > 0)) begin
+          state <= ~state;
+        end
       end else if ((state == STATE_RUNNING) && (1 == clk_counter_positive_edge)) begin
         if (counter == 0) begin
           alarm <= 1;
