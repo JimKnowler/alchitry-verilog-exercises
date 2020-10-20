@@ -1,10 +1,12 @@
 # Alchitry Project 4 - Decimal Counter
 
-Second project with Alchitry Au FPGA board
+Fourth project with Alchitry Au FPGA board
 
 Inspired by Alchitry Verilog tutorial: https://alchitry.com/blogs/tutorials/creating-a-vivado-project-for-the-au
 
-Conver from binary to BCD (Binary Coded Decimal) so that counter appears as decimal.
+Convert from binary to BCD (Binary Coded Decimal) so that counter appears as decimal.
+
+ ![Decimal Counter demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/04-decimal-counter/docs/decimal_counter.gif)
 
 # Modules
 
