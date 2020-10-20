@@ -13,7 +13,7 @@ Use dip switches to select value displayed on each 7-seg display
 
  ![Multiple 7-Segments demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/02-multiple-7-segment-displays/docs/multiple_segments_dip_switches.gif)
 
-
+[Link to Video](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/02-multiple-7-segment-displays/docs/multiple_segments_dip_switches.mov)
 
 # Modules
 

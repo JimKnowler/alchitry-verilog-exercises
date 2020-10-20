@@ -8,7 +8,9 @@ Implement an egg timer:
  - UP/DOWN buttons - increment / decrement time to count down + deactivate alarm
  - CENTER button - start / stop
 
- ![Egg Timer demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/06-egg-timer/docs/eggtimer.gif)
+![Egg Timer demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/06-egg-timer/docs/eggtimer.gif)
+
+[Link to Video](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/06-egg-timer/docs/eggtimer.mov)
 
 # Modules
 

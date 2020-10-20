@@ -6,7 +6,9 @@ Inspired by Alchitry Verilog tutorial: https://alchitry.com/blogs/tutorials/crea
 
 Convert from binary to BCD (Binary Coded Decimal) so that counter appears as decimal.
 
- ![Decimal Counter demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/04-decimal-counter/docs/decimal_counter.gif)
+![Decimal Counter demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/04-decimal-counter/docs/decimal_counter.gif)
+
+[Link to Video](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/04-decimal-counter/docs/decimal_counter.mov)
 
 # Modules
 
