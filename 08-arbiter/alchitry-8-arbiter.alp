@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="verilog-8" board="Alchitry Au" language="Verilog" version="3">
+  <files>
+    <src>arbiter.v</src>
+    <src top="true">au_top.v</src>
+    <src>arbiter_bit.v</src>
+    <constraint lib="true">au.xdc</constraint>
+    <constraint>alchitry_au_and_io.acf</constraint>
+  </files>
+</project>
