@@ -11,6 +11,10 @@ Use dip switches to select value displayed on each 7-seg display
 - dip switches 8..11 - value 2 (middle left digit)
 - dip switches 12.15 - value 3 (far left digit)
 
+ ![Multiple 7-Segments demo](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/02-multiple-7-segment-displays/docs/multiple_segments_dip_switches.gif)
+
+[Link to Video](https://github.com/JimKnowler/alchitry-verilog-exercises/raw/main/02-multiple-7-segment-displays/docs/multiple_segments_dip_switches.mov)
+
 # Modules
 
 - au_top.v - entry point

@@ -1,6 +1,6 @@
 # Alchitry Project 3 - Hex Counter
 
-Second project with Alchitry Au FPGA board
+Third project with Alchitry Au FPGA board
 
 Inspired by Alchitry Verilog tutorial: https://alchitry.com/blogs/tutorials/creating-a-vivado-project-for-the-au
 
