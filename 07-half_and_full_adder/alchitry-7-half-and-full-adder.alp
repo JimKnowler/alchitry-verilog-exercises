@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="verilog-7" board="Alchitry Au" language="Verilog" version="3">
+  <files>
+    <src>full_adder.v</src>
+    <src>half_adder.v</src>
+    <src>ripple_adder.v</src>
+    <src top="true">au_top.v</src>
+    <constraint lib="true">au.xdc</constraint>
+    <constraint>alchitry_au_and_io.acf</constraint>
+  </files>
+</project>
